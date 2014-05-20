@@ -8,6 +8,8 @@ makeCacheMatrix <- function(x = matrix()) {
 	
 	inv <- NULL
 	set <- function(y) {
+		
+		## "<<-" is an operator that allows to assign value to an object that already exists in a different environment/ "parent" context.
 		x <<- y
 		inv <<- NULL
 	}
